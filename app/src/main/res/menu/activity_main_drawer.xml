@@ -7,37 +7,32 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_menu_share"
-        android:title="Home"/>
-    <item
-        android:id="@+id/nav_orders"
-        android:icon="@drawable/ic_menu_gallery"
-        android:title="Your's Orders"/>
+        android:title="@string/home"/>
     <item
         android:id="@+id/nav_recipes"
         android:icon="@drawable/ic_menu_slideshow"
-        android:title="Recipes"/>
+        android:title="@string/recipes"/>
     <item
         android:id="@+id/nav_food_map"
         android:icon="@drawable/ic_menu_manage"
-        android:title="Meal Plan"/>
+        android:title="@string/meal_plan"/>
     <item
-        android:id="@+id/nav_cupboard"
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/your_orders"/>
+    <item
+        android:id="@+id/nav_pantry"
         android:icon="@drawable/ic_menu_send"
-        android:title="Your Pantry"/>
+        android:title="@string/your_pantry"/>
+    <item
+        android:id="@+id/nav_contact_us"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/contact_us"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/profile"/>
   </group>
 
-  <item android:title="Communicate">
-    <menu>
-      <item
-          android:id="@+id/nav_contact_us"
-          android:icon="@drawable/ic_menu_share"
-          android:title="Contact Us"/>
-      <item
-          android:id="@+id/nav_profile"
-          android:icon="@drawable/ic_menu_share"
-          android:title="Profile"/>
-    </menu>
-
-  </item>
 
 </menu>

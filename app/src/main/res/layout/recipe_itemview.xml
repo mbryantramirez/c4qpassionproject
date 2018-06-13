@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    >
+  <ImageView
+      android:id="@+id/recipe_iv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:contentDescription="@string/recipe_content_description"
+      android:scaleType="centerCrop"
+      android:src="@mipmap/ic_launcher"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/recipe_tv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:backgroundTint="@android:color/black"
+      android:fontFamily="sans-serif-light"
+      android:padding="15dp"
+      android:shadowColor="@color/text_shadow"
+      android:shadowDx="1"
+      android:shadowDy="1"
+      android:shadowRadius="2"
+      android:textAllCaps="true"
+      android:textColor="@color/light_font"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="@id/recipe_iv"
+      app:layout_constraintEnd_toEndOf="@id/recipe_iv"
+      app:layout_constraintHorizontal_bias="0.529"
+      app:layout_constraintStart_toStartOf="@id/recipe_iv"
+      tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

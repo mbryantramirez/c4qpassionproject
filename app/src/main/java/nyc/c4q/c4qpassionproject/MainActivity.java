@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    //setupToolBar();
-    //setupNavigationDrawer();
+    setupToolBar();
+    setupNavigationDrawer();
     setupDrawerNavigation();
   }
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
   }
 
-  public void setupNavigationDrawer(Toolbar toolbar) {
+  public void setupNavigationDrawer() {
     DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
     ActionBarDrawerToggle drawerToggle =
         new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open,

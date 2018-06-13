@@ -84,19 +84,19 @@ public class RecipesFragment extends Fragment {
     recipesAdapter = new RecipesAdapter(mealList);
     recyclerView.setAdapter(recipesAdapter);
   }
+  //
+  //@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+  //  super.onActivityCreated(savedInstanceState);
+  //  setupToolBar();
+  //}
 
-  @Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-    super.onActivityCreated(savedInstanceState);
-    setupToolBar();
-  }
-
-  public void setupToolBar() {
-    toolbar = view.findViewById(R.id.recipes_toolbar);
-    ((MainActivity) getActivity()).setSupportActionBar(toolbar);
-    if (((MainActivity) getActivity()).getSupportActionBar() != null) {
-      ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-      ((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
-      ((MainActivity) getActivity()).setupNavigationDrawer(toolbar);
-    }
-  }
+  //public void setupToolBar() {
+  //  toolbar = view.findViewById(R.id.recipes_toolbar);
+  //  ((MainActivity) getActivity()).setSupportActionBar(toolbar);
+  //  if (((MainActivity) getActivity()).getSupportActionBar() != null) {
+  //    ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+  //    ((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
+  //    ((MainActivity) getActivity()).setupNavigationDrawer(toolbar);
+  //  }
+  //}
 }

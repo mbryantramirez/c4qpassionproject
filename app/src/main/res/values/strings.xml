@@ -17,5 +17,7 @@
   <string name="contact_us">Contact Us</string>
   <string name="profile">Profile</string>
   <string name="recipe_content_description">Food</string>
+  <string name="category_rec_instructions">Instructions</string>
+  <string name="category_rec_ingredients">Ingredients</string>
 
 </resources>

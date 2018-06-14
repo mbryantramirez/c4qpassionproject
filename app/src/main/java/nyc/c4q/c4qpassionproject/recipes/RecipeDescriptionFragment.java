@@ -40,9 +40,11 @@ public class RecipeDescriptionFragment extends Fragment {
     // Inflate the layout for this fragment
     view = inflater.inflate(R.layout.fragment_recipe_description, container, false);
 
+    MealsResponse.Meals meals = getArguments().getParcelable("recipe");
+
     ViewPager viewPager = view.findViewById(R.id.recipe_viewpager);
     RecipeFragmentPagerAdapter adapter =
-        new RecipeFragmentPagerAdapter(getContext(), getActivity().getSupportFragmentManager());
+        new RecipeFragmentPagerAdapter(getContext(), getActivity().getSupportFragmentManager(),meals);
     viewPager.setAdapter(adapter);
     TabLayout tabLayout = view.findViewById(R.id.recipe_tabs);
     tabLayout.setupWithViewPager(viewPager);

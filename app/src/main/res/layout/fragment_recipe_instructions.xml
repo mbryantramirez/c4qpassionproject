@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recipes.RecipeInstructionsFragment"
-    >
+    tools:context=".recipes.RecipeInstructionsFragment">
 
   <!-- TODO: Update blank fragment layout -->
   <TextView
+      android:layout_gravity="center_vertical"
+      android:id="@+id/rec_instruc_tv"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:text="@string/hello_blank_fragment"
       />
 

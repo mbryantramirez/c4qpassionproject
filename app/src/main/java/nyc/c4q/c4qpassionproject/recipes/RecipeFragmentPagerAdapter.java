@@ -19,10 +19,31 @@ public class RecipeFragmentPagerAdapter extends FragmentPagerAdapter {
     private Context context;
     private MealsResponse.Meals meal;
 
+    private ArrayList<String> measureList;
+    private ArrayList<String> ingredientsList;
+    private String instructions;
+    private String imageThumb;
+
     public RecipeFragmentPagerAdapter(Context context, FragmentManager fm, MealsResponse.Meals meals) {
         super(fm);
         this.context = context;
         this.meal = meals;
+    }
+
+    public ArrayList<String> getMeasureList() {
+        return measureList;
+    }
+
+    public ArrayList<String> getIngredientsList() {
+        return ingredientsList;
+    }
+
+    public String getInstructions() {
+        return instructions;
+    }
+
+    public String getImageThumb() {
+        return imageThumb;
     }
 
     @Override
@@ -30,14 +51,15 @@ public class RecipeFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             Bundle bundle = new Bundle();
             bundle.putString("Instructions", meal.getStrInstructions());
+            bundle.putString("Image", meal.getStrMealThumb());
             RecipeInstructionsFragment recipeInstructionsFragment = new RecipeInstructionsFragment();
             recipeInstructionsFragment.setArguments(bundle);
             return recipeInstructionsFragment;
         } else {
 
             Bundle bundle = new Bundle();
-            ArrayList<String> measureList = new ArrayList<>();
-            ArrayList<String> ingredientsList = new ArrayList<>();
+            measureList = new ArrayList<>();
+            ingredientsList = new ArrayList<>();
             String measure20 = meal.getStrmeasure20();
             String measure19 = meal.getStrmeasure19();
             String measure18 = meal.getStrmeasure18();

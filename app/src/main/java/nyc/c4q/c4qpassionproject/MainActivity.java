@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,9 +23,21 @@ public class MainActivity extends AppCompatActivity {
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    setUpRealm();
     setupToolBar();
     setupNavigationDrawer();
     setupDrawerNavigation();
+  }
+
+  private void setUpRealm() {
+
+    Realm.init(this);
+    RealmConfiguration realmConfig = new RealmConfiguration.Builder()
+        .name("tasky.realm")
+        .schemaVersion(0)
+        .deleteRealmIfMigrationNeeded()
+        .build();
+    Realm.setDefaultConfiguration(realmConfig);
   }
 
   private void setupDrawerNavigation() {

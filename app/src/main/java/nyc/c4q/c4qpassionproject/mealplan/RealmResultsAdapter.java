@@ -12,7 +12,8 @@ import org.w3c.dom.Text;
 
 class RealmResultsAdapter extends RecyclerView.Adapter<RealmResultsAdapter.RealmMealViewHolder> {
 
-  public RealmResultsAdapter(Context context, List<String>) {
+  public RealmResultsAdapter(Context context, List<String> ingredientsList) {
+
   }
 
   @NonNull @Override

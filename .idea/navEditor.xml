@@ -8,6 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="nav_food_map">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="25" />
+                            <option name="y" value="400" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="nav_home">
                     <value>
                       <LayoutPositions>
@@ -15,18 +27,6 @@
                           <Point>
                             <option name="x" value="250" />
                             <option name="y" value="25" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="nav_meal_plan">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="25" />
-                            <option name="y" value="400" />
                           </Point>
                         </option>
                       </LayoutPositions>
